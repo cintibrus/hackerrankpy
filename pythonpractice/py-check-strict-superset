@@ -1,0 +1,6 @@
+A = set(str(raw_input()).split())
+out = True
+for i in range(int(raw_input())):
+    N = set(str(raw_input()).split())
+    out=(A.issuperset(N))and(out)
+print(out)
