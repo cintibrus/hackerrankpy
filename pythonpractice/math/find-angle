@@ -1,0 +1,11 @@
+'''
+round math.degrees math.atan
+'''
+
+import math
+
+AB = float(raw_input())
+BC = float(raw_input())
+MC = ((AB**2+BC**2)**0.5)/2
+alpha = 180 - math.degrees(math.atan(AB/BC)) - 2*math.degrees(math.asin(0.5*BC/MC))
+print('%s°'%(int(round(alpha))))
