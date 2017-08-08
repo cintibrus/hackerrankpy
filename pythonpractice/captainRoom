@@ -1,0 +1,4 @@
+k = int(raw_input())
+rooms = str(raw_input())
+set_rooms=set(rooms.split(" "))
+print((sum(map(int,list(set_rooms)))*k - sum(map(int,list(rooms.split(" ")))) )/(k-1))
