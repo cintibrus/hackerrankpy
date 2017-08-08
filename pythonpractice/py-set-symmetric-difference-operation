@@ -1,0 +1,9 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n_eng = int(raw_input())
+str_eng = str(raw_input())
+set_eng=set(str_eng.split(" "))
+n_french = int(raw_input())
+str_french = str(raw_input())
+set_french=set(str_french.split(" "))
+
+print(len(set_eng^set_french))
