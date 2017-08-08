@@ -1,0 +1,4 @@
+import numpy
+P = numpy.array(raw_input().split()).astype(numpy.float)
+x = numpy.array(raw_input()).astype(numpy.float)
+print numpy.polyval(P, x) 
