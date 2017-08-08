@@ -1,0 +1,10 @@
+'''
+Create matrix from raw_input and print determinant
+'''
+import numpy
+
+N = int(raw_input())
+AA = numpy.empty(shape=(N, N), dtype=float)
+for i in range(N):
+    AA[:,i] = numpy.array(raw_input().split()).astype(numpy.float)
+print(numpy.linalg.det(AA))
