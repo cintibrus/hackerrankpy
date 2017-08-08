@@ -1,0 +1,15 @@
+
+
+n_A = int(raw_input())
+str_A = str(raw_input())
+set_A = set(str_A.split(" "))
+N = int(raw_input())
+
+for i in range(N):
+    str_N = str(raw_input())
+    operator,n = str_N.split(" ")
+    str_n = str(raw_input())
+    set_n = set(str_n.split(" "))
+    eval('set_A.{}(set_n)'.format(operator))
+    
+print(sum(map(int, list(set_A))))
